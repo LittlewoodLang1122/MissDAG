@@ -1,0 +1,13 @@
+name: feddag_new_env
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - mkl
+  - mkl-service
+  - mkl_fft
+  - mkl_random
+  - intel-openmp

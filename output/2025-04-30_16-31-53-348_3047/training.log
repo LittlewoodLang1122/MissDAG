@@ -1,0 +1,247 @@
+2025-04-30 17:31:53,348 INFO - __main__ - Finished setting up the logger.
+2025-04-30 17:31:53,368 INFO - __main__ - Finished loading the dataset.
+2025-04-30 17:31:53,368 INFO - __main__ - Finished setting up the structure learning method.
+2025-04-30 17:31:53,416 WARNING - tensorflow - From /root/miniconda3/envs/feddag_new_env/lib/python3.7/site-packages/tensorflow_core/python/ops/linalg/linalg_impl.py:283: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2025-04-30 17:31:53,676 INFO - dag_methods.notears_ica.al_trainer - Started training for 20 iterations
+2025-04-30 17:31:53,676 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:31:54,623 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+00, alpha 2.270E-01
+2025-04-30 17:31:55,391 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+01, alpha 2.270E-01
+2025-04-30 17:31:56,428 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+02, alpha 2.270E-01
+2025-04-30 17:31:57,533 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+02, alpha 3.482E+00
+2025-04-30 17:31:58,437 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+03, alpha 3.482E+00
+2025-04-30 17:31:59,445 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+04, alpha 3.482E+00
+2025-04-30 17:32:00,403 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+04, alpha 3.238E+01
+2025-04-30 17:32:01,528 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+05, alpha 3.238E+01
+2025-04-30 17:32:02,520 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+05, alpha 9.780E+01
+2025-04-30 17:32:03,483 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+06, alpha 9.780E+01
+2025-04-30 17:32:04,448 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+07, alpha 9.780E+01
+2025-04-30 17:32:05,383 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+07, alpha 7.082E+02
+2025-04-30 17:32:06,208 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+08, alpha 7.082E+02
+2025-04-30 17:32:07,218 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+08, alpha 1.853E+03
+2025-04-30 17:32:08,139 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+09, alpha 1.853E+03
+2025-04-30 17:32:09,189 INFO - dag_methods.notears_ica.al_trainer - rho 1.000E+10, alpha 1.853E+03
+2025-04-30 17:32:10,076 INFO - dag_methods.notears_ica.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:32:10,079 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:32:10,087 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.5455, 'tpr': 0.3125, 'fpr': 0.0759, 'shd': 33, 'nnz': 22, 'precision': 0.4545, 'recall': 0.3125, 'F1': 0.3704, 'gscore': 0.0}
+2025-04-30 17:32:10,087 INFO - miss_methods.miss_dag_nongaussian - Started the 1th iteration for EM algorithm with DAG learning.
+2025-04-30 17:32:29,426 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:32:29,426 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:32:31,065 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.160E-01
+2025-04-30 17:32:32,821 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.160E-01
+2025-04-30 17:32:34,781 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.160E-01
+2025-04-30 17:32:36,464 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.692E+00
+2025-04-30 17:32:38,044 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.692E+00
+2025-04-30 17:32:40,027 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.692E+00
+2025-04-30 17:32:41,631 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.579E+01
+2025-04-30 17:32:43,633 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.579E+01
+2025-04-30 17:32:45,532 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.576E+01
+2025-04-30 17:32:47,430 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.576E+01
+2025-04-30 17:32:49,549 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.576E+01
+2025-04-30 17:32:51,412 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.717E+02
+2025-04-30 17:32:53,189 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.717E+02
+2025-04-30 17:32:54,918 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.716E+03
+2025-04-30 17:32:56,746 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.716E+03
+2025-04-30 17:32:58,772 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 3.623E+03
+2025-04-30 17:33:00,629 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 3.623E+03
+2025-04-30 17:33:02,133 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 8-th iteration
+2025-04-30 17:33:02,137 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:33:02,148 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.2083, 'tpr': 0.5938, 'fpr': 0.0316, 'shd': 18, 'nnz': 24, 'precision': 0.7917, 'recall': 0.5938, 'F1': 0.6786, 'gscore': 0.4375}
+2025-04-30 17:33:02,148 INFO - miss_methods.miss_dag_nongaussian - Started the 2th iteration for EM algorithm with DAG learning.
+2025-04-30 17:33:28,224 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:33:28,224 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:33:29,719 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.298E-01
+2025-04-30 17:33:31,202 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.298E-01
+2025-04-30 17:33:32,759 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.298E-01
+2025-04-30 17:33:34,327 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.479E+00
+2025-04-30 17:33:35,809 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.479E+00
+2025-04-30 17:33:37,685 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.479E+00
+2025-04-30 17:33:39,129 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.493E+01
+2025-04-30 17:33:40,728 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.493E+01
+2025-04-30 17:33:42,421 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.509E+01
+2025-04-30 17:33:44,288 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.509E+01
+2025-04-30 17:33:46,165 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.509E+01
+2025-04-30 17:33:48,184 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.519E+02
+2025-04-30 17:33:49,810 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.519E+02
+2025-04-30 17:33:51,524 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.696E+03
+2025-04-30 17:33:52,979 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.696E+03
+2025-04-30 17:33:54,529 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:33:54,533 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:33:54,544 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.1667, 'tpr': 0.625, 'fpr': 0.0253, 'shd': 16, 'nnz': 24, 'precision': 0.8333, 'recall': 0.625, 'F1': 0.7143, 'gscore': 0.5}
+2025-04-30 17:33:54,544 INFO - miss_methods.miss_dag_nongaussian - Started the 3th iteration for EM algorithm with DAG learning.
+2025-04-30 17:34:27,724 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:34:27,724 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:34:29,359 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.663E-01
+2025-04-30 17:34:30,913 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.663E-01
+2025-04-30 17:34:32,416 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.663E-01
+2025-04-30 17:34:34,262 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.779E+00
+2025-04-30 17:34:35,946 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.779E+00
+2025-04-30 17:34:37,753 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.779E+00
+2025-04-30 17:34:39,605 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.460E+01
+2025-04-30 17:34:41,698 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.460E+01
+2025-04-30 17:34:43,496 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.457E+01
+2025-04-30 17:34:45,360 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.457E+01
+2025-04-30 17:34:47,098 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.457E+01
+2025-04-30 17:34:48,862 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.323E+02
+2025-04-30 17:34:50,618 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.323E+02
+2025-04-30 17:34:52,444 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 5.323E+02
+2025-04-30 17:34:54,347 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 2.440E+03
+2025-04-30 17:34:55,874 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 2.440E+03
+2025-04-30 17:34:57,611 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:34:57,614 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:34:57,626 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0833, 'tpr': 0.6875, 'fpr': 0.0127, 'shd': 12, 'nnz': 24, 'precision': 0.9167, 'recall': 0.6875, 'F1': 0.7857, 'gscore': 0.625}
+2025-04-30 17:34:57,626 INFO - miss_methods.miss_dag_nongaussian - Started the 4th iteration for EM algorithm with DAG learning.
+2025-04-30 17:35:34,929 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:35:34,929 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:35:36,689 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 2.081E-01
+2025-04-30 17:35:38,634 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 2.081E-01
+2025-04-30 17:35:40,759 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.081E-01
+2025-04-30 17:35:42,583 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 3.555E+00
+2025-04-30 17:35:44,601 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 3.555E+00
+2025-04-30 17:35:46,366 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 1.098E+01
+2025-04-30 17:35:48,161 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 1.098E+01
+2025-04-30 17:35:50,064 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.924E+01
+2025-04-30 17:35:51,849 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.924E+01
+2025-04-30 17:35:53,772 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 2.924E+01
+2025-04-30 17:35:55,843 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 1.971E+02
+2025-04-30 17:35:57,512 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 1.971E+02
+2025-04-30 17:35:59,491 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 6.167E+02
+2025-04-30 17:36:01,406 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 6.167E+02
+2025-04-30 17:36:03,323 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 6.167E+02
+2025-04-30 17:36:05,152 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 4.431E+03
+2025-04-30 17:36:06,791 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 4.431E+03
+2025-04-30 17:36:08,596 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 8-th iteration
+2025-04-30 17:36:08,601 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:36:08,612 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0417, 'tpr': 0.7188, 'fpr': 0.0063, 'shd': 10, 'nnz': 24, 'precision': 0.9583, 'recall': 0.7188, 'F1': 0.8214, 'gscore': 0.6875}
+2025-04-30 17:36:08,613 INFO - miss_methods.miss_dag_nongaussian - Started the 5th iteration for EM algorithm with DAG learning.
+2025-04-30 17:36:44,321 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:36:44,321 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:36:46,017 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.789E-01
+2025-04-30 17:36:48,106 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.789E-01
+2025-04-30 17:36:49,968 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.789E-01
+2025-04-30 17:36:51,762 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.890E+00
+2025-04-30 17:36:53,420 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.890E+00
+2025-04-30 17:36:55,225 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.890E+00
+2025-04-30 17:36:56,691 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.448E+01
+2025-04-30 17:36:58,617 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.448E+01
+2025-04-30 17:37:00,660 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.312E+01
+2025-04-30 17:37:02,626 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.312E+01
+2025-04-30 17:37:04,729 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.312E+01
+2025-04-30 17:37:06,533 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.500E+02
+2025-04-30 17:37:08,283 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.500E+02
+2025-04-30 17:37:10,104 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.694E+03
+2025-04-30 17:37:11,836 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.694E+03
+2025-04-30 17:37:13,808 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 1.694E+03
+2025-04-30 17:37:15,802 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:37:15,806 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:37:15,817 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0, 'tpr': 0.7188, 'fpr': 0.0, 'shd': 9, 'nnz': 23, 'precision': 1.0, 'recall': 0.7188, 'F1': 0.8364, 'gscore': 0.7188}
+2025-04-30 17:37:15,817 INFO - miss_methods.miss_dag_nongaussian - Started the 6th iteration for EM algorithm with DAG learning.
+2025-04-30 17:37:51,922 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:37:51,922 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:37:53,728 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 2.076E-01
+2025-04-30 17:37:55,648 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 2.076E-01
+2025-04-30 17:37:57,562 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.076E-01
+2025-04-30 17:37:59,310 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 3.601E+00
+2025-04-30 17:38:01,208 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 3.601E+00
+2025-04-30 17:38:03,084 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 1.087E+01
+2025-04-30 17:38:04,810 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 1.087E+01
+2025-04-30 17:38:06,578 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.864E+01
+2025-04-30 17:38:08,621 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.864E+01
+2025-04-30 17:38:10,637 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 2.864E+01
+2025-04-30 17:38:12,351 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 1.927E+02
+2025-04-30 17:38:14,106 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 1.927E+02
+2025-04-30 17:38:16,167 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.927E+02
+2025-04-30 17:38:18,076 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.528E+03
+2025-04-30 17:38:19,616 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.528E+03
+2025-04-30 17:38:21,736 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:38:21,741 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:38:21,752 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0, 'tpr': 0.7188, 'fpr': 0.0, 'shd': 9, 'nnz': 23, 'precision': 1.0, 'recall': 0.7188, 'F1': 0.8364, 'gscore': 0.7188}
+2025-04-30 17:38:21,752 INFO - miss_methods.miss_dag_nongaussian - Started the 7th iteration for EM algorithm with DAG learning.
+2025-04-30 17:39:00,019 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:39:00,019 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:39:01,766 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.846E-01
+2025-04-30 17:39:03,823 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.846E-01
+2025-04-30 17:39:05,601 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.846E-01
+2025-04-30 17:39:07,457 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.951E+00
+2025-04-30 17:39:09,223 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.951E+00
+2025-04-30 17:39:11,052 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.951E+00
+2025-04-30 17:39:12,698 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.437E+01
+2025-04-30 17:39:14,778 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.437E+01
+2025-04-30 17:39:16,884 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.205E+01
+2025-04-30 17:39:18,491 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.205E+01
+2025-04-30 17:39:20,308 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.205E+01
+2025-04-30 17:39:21,925 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.680E+02
+2025-04-30 17:39:23,781 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.680E+02
+2025-04-30 17:39:25,796 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.522E+03
+2025-04-30 17:39:27,367 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.522E+03
+2025-04-30 17:39:29,029 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 3.429E+03
+2025-04-30 17:39:30,892 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 8-th iteration
+2025-04-30 17:39:30,903 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:39:30,924 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0, 'tpr': 0.7812, 'fpr': 0.0, 'shd': 7, 'nnz': 25, 'precision': 1.0, 'recall': 0.7812, 'F1': 0.8772, 'gscore': 0.7812}
+2025-04-30 17:39:30,924 INFO - miss_methods.miss_dag_nongaussian - Started the 8th iteration for EM algorithm with DAG learning.
+2025-04-30 17:40:09,523 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:40:09,523 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:40:11,196 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.875E-01
+2025-04-30 17:40:13,090 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.875E-01
+2025-04-30 17:40:15,131 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.875E-01
+2025-04-30 17:40:17,022 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.995E+00
+2025-04-30 17:40:18,995 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.995E+00
+2025-04-30 17:40:20,887 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.995E+00
+2025-04-30 17:40:22,942 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.455E+01
+2025-04-30 17:40:24,975 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.455E+01
+2025-04-30 17:40:26,438 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.299E+01
+2025-04-30 17:40:28,235 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.299E+01
+2025-04-30 17:40:30,167 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.299E+01
+2025-04-30 17:40:31,695 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.498E+02
+2025-04-30 17:40:33,297 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.498E+02
+2025-04-30 17:40:35,227 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.504E+03
+2025-04-30 17:40:36,986 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.504E+03
+2025-04-30 17:40:38,939 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 1.504E+03
+2025-04-30 17:40:40,948 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:40:40,951 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:40:40,962 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0, 'tpr': 0.7812, 'fpr': 0.0, 'shd': 7, 'nnz': 25, 'precision': 1.0, 'recall': 0.7812, 'F1': 0.8772, 'gscore': 0.7812}
+2025-04-30 17:40:40,962 INFO - miss_methods.miss_dag_nongaussian - Started the 9th iteration for EM algorithm with DAG learning.
+2025-04-30 17:41:21,226 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:41:21,226 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:41:23,172 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.802E-01
+2025-04-30 17:41:25,243 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.802E-01
+2025-04-30 17:41:26,939 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.802E-01
+2025-04-30 17:41:28,815 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.971E+00
+2025-04-30 17:41:30,782 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.971E+00
+2025-04-30 17:41:32,423 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.971E+00
+2025-04-30 17:41:34,373 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.372E+01
+2025-04-30 17:41:36,454 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.372E+01
+2025-04-30 17:41:38,323 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.064E+01
+2025-04-30 17:41:40,121 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.064E+01
+2025-04-30 17:41:42,220 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.064E+01
+2025-04-30 17:41:43,681 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.475E+02
+2025-04-30 17:41:45,683 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.475E+02
+2025-04-30 17:41:47,562 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.501E+03
+2025-04-30 17:41:49,358 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.501E+03
+2025-04-30 17:41:51,394 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+10, alpha 1.501E+03
+2025-04-30 17:41:53,063 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:41:53,067 INFO - miss_methods.miss_dag_nongaussian - Finished post-processing the estimated graph.
+2025-04-30 17:41:53,079 INFO - miss_methods.miss_dag_nongaussian - run result:{'fdr': 0.0, 'tpr': 0.75, 'fpr': 0.0, 'shd': 8, 'nnz': 24, 'precision': 1.0, 'recall': 0.75, 'F1': 0.8571, 'gscore': 0.75}
+2025-04-30 17:41:53,079 INFO - miss_methods.miss_dag_nongaussian - Started the 10th iteration for EM algorithm with DAG learning.
+2025-04-30 17:42:31,623 INFO - dag_methods.notears_ica_mcem.al_trainer - Started training for 20 iterations
+2025-04-30 17:42:31,623 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 0.000E+00
+2025-04-30 17:42:33,488 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+00, alpha 1.850E-01
+2025-04-30 17:42:35,421 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+01, alpha 1.850E-01
+2025-04-30 17:42:37,429 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 1.850E-01
+2025-04-30 17:42:39,089 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+02, alpha 2.976E+00
+2025-04-30 17:42:40,921 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+03, alpha 2.976E+00
+2025-04-30 17:42:42,774 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.976E+00
+2025-04-30 17:42:44,534 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+04, alpha 2.407E+01
+2025-04-30 17:42:46,590 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 2.407E+01
+2025-04-30 17:42:48,408 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+05, alpha 7.195E+01
+2025-04-30 17:42:50,331 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+06, alpha 7.195E+01
+2025-04-30 17:42:52,229 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 7.195E+01
+2025-04-30 17:42:54,065 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+07, alpha 5.679E+02
+2025-04-30 17:42:56,082 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 5.679E+02
+2025-04-30 17:42:57,892 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+08, alpha 1.522E+03
+2025-04-30 17:42:59,436 INFO - dag_methods.notears_ica_mcem.al_trainer - rho 1.000E+09, alpha 1.522E+03
+2025-04-30 17:43:01,553 INFO - dag_methods.notears_ica_mcem.al_trainer - Early stopping at 7-th iteration
+2025-04-30 17:43:01,557 INFO - __main__ - Finished estimating the graph.
+2025-04-30 17:43:01,558 INFO - __main__ - Finished post-processing the estimated graph.
+2025-04-30 17:43:01,569 INFO - __main__ - run result:{'fdr': 0.0, 'tpr': 0.7812, 'fpr': 0.0, 'shd': 7, 'nnz': 25, 'precision': 1.0, 'recall': 0.7812, 'F1': 0.8772, 'gscore': 0.7812}

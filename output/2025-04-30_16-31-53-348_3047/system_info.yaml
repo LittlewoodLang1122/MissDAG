@@ -1,0 +1,10 @@
+architecture: x86_64
+cpu_count: 16
+git_revision_hash: 3c1eeed8f6245670614d2f2938ee3c3b5a21f17b
+percent_available_ram: 80.43011623964193
+platform: Linux
+platform-release: 6.5.0-45-generic
+platform-version: '#45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 15 16:40:02 UTC
+  2'
+processor: x86_64
+ram: 63 GB
