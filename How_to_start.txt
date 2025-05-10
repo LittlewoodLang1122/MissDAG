@@ -1,0 +1,9 @@
+conda env create -f init.yml
+conda activate mdag
+pip install -r requirements.txt
+pip install protobuf==3.20.*
+
+
+And then, you can run:
+
+bash test.sh

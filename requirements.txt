@@ -15,7 +15,7 @@ graphical-model-learning==0.1a7
 graphical-models==0.1a17
 missingpy==0.2.0
 statsmodels==0.13.2
-# tensorflow-gpu==1.15.0
+tensorflow-gpu==1.15.0
 tensorboard==1.15.0
 tqdm==4.64.1
 ipdb==0.13.9
