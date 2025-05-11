@@ -1,4 +1,4 @@
-name: feddag_new_env
+name: mdag
 channels:
   - pytorch
   - defaults
