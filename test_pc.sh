@@ -1,4 +1,3 @@
-
 python main.py  --seed 0 \
                 --n 100 \
                 --d 20 \
@@ -9,6 +8,7 @@ python main.py  --seed 0 \
                 --equal_variances \
                 --MLEScore Sup-G \
                 --noise_type gumbel \
-                --miss_method_type miss_dag_nonlinear \
+                --miss_method_type miss_dag_nongaussian \
                 --em_iter 10 \
-                --dag_method_type notears_mlp_mcem
+                --dag_method_type notears_ica_mcem \
+                --prior_adj_path adj_mat.npy

@@ -10,6 +10,8 @@ from utils.dir import create_dir, get_datetime_str
 from utils.logging import setup_logger, get_system_info
 from utils.utils import set_seed, MetricsDAG, postprocess
 
+import numpy as np
+
 # For logging of tensorflow messages
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -35,6 +37,24 @@ def main():
     # Reproducibility
     set_seed(args.seed)
 
+    # adj_mat
+    prior_adj_matrix = None
+    if args.prior_adj_path:
+        try:
+            # 假设 prior_adj_matrix[i, j] == 0 表示没有从节点 i 到节点 j 的边
+            prior_adj_matrix = np.load(args.prior_adj_path)
+            # 可以在这里添加对矩阵维度和d是否匹配的检查
+            if prior_adj_matrix.shape != (args.d, args.d):
+                _logger.warning(f"Shape of prior adjacency matrix {prior_adj_matrix.shape} "
+                                f"does not match d={args.d}. Ignoring prior knowledge.")
+                prior_adj_matrix = None
+            else:
+                _logger.info(f"Successfully loaded prior adjacency matrix from: {args.prior_adj_path}")
+        except Exception as e:
+            _logger.error(f"Failed to load prior adjacency matrix from {args.prior_adj_path}: {e}. "
+                          f"Ignoring prior knowledge.")
+            prior_adj_matrix = None
+
     # Load dataset
     dataset = SyntheticDataset(args.n, args.d, args.graph_type, args.degree, args.noise_type,
                                args.miss_type, args.miss_percent, args.sem_type,
@@ -44,13 +64,13 @@ def main():
     if args.dag_method_type == 'notears':
         dag_method = Notears(args.lambda_1_ev)
     elif args.dag_method_type == 'notears_ica':
-        dag_method = Notears_ICA(args.seed, args.MLEScore)
+        dag_method = Notears_ICA(args.seed, args.MLEScore, prior_adj=prior_adj_matrix)
     elif args.dag_method_type == 'notears_ica_mcem':
-        dag_init_method = Notears_ICA(args.seed, args.MLEScore)
-        dag_method = Notears_ICA_MCEM(args.seed, args.MLEScore)
+        dag_init_method = Notears_ICA(args.seed, args.MLEScore, prior_adj=prior_adj_matrix)
+        dag_method = Notears_ICA_MCEM(args.seed, args.MLEScore, prior_adj=prior_adj_matrix)
     elif args.dag_method_type == 'notears_mlp_mcem':
-        dag_init_method = Notears_MLP_MCEM_INIT()
-        dag_method = Notears_MLP_MCEM()
+        dag_init_method = Notears_MLP_MCEM_INIT(prior_adj=prior_adj_matrix)
+        dag_method = Notears_MLP_MCEM(prior_adj=prior_adj_matrix) 
     else:
         raise ValueError("Unknown method type.")
     _logger.info("Finished setting up the structure learning method.")
@@ -68,7 +88,7 @@ def main():
 
         # Estimate the DAG
         if args.dag_method_type not in {'notears_ica_mcem', 'notears_mlp_mcem'}:
-            B_est = dag_method.fit(X=X, cov_emp=None)
+            B_est = dag_method.fit(X=X, cov_emp=None, prior_adj=prior_adj_matrix)
         else:
             raise ValueError("The miss_method here does not support notears_ica_mcem/notears_mlp_mcem.")
 

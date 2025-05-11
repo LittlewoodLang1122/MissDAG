@@ -8,7 +8,7 @@ class Notears:
     def __init__(self, lambda_1_ev):
         self.lambda_1_ev = lambda_1_ev
 
-    def fit(self, X=None, cov_emp=None):
+    def fit(self, X=None, cov_emp=None, prior_adj=None):
         """Solve min_W L(W; X) + lambda1 ‖W‖_1 s.t. h(W) = 0 using augmented Lagrangian.
 
         Args:
@@ -67,6 +67,21 @@ class Notears:
         w_est, rho, alpha, h = np.zeros(2 * d * d), 1.0, 0.0, np.inf  # double w_est into (w_pos, w_neg)
         bnds = [(0, 0) if i == j else (0, None) for _ in range(2)
                 for i in range(d) for j in range(d)]
+        if prior_adj is not None:
+            current_bnds = []
+            for _ in range(2): # For w_pos and w_neg
+                for i in range(d): # Target node index (row in W)
+                    for j in range(d): # Source node index (column in W)
+                        # W_ij is the coefficient for X_j in equation for X_i (edge j -> i)
+                        if i == j: # No self-loops
+                            current_bnds.append((0, 0))
+                        # If prior_adj[source, target] == 0 means no edge source -> target
+                        elif prior_adj is not None and prior_adj[j, i] == 0:
+                            current_bnds.append((0, 0))
+                        else:
+                            current_bnds.append((0, None))
+            bnds = current_bnds # 使用新的bnds
+
         for _ in range(max_iter):
             w_new, h_new = None, None
             while rho < rho_max:

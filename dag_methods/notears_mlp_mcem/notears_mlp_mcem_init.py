@@ -5,8 +5,9 @@ import torch.nn as nn
 import numpy as np
 
 class Notears_MLP_MCEM_INIT:
-    def __init__(self, lambda1=0.01):
+    def __init__(self, lambda1=0.01, prior_adj=None):
         self.lambda1 = lambda1
+        self.prior_adj = prior_adj
 
     def fit(self, X=None, cov_emp=None):
         assert (X is not None) ^ (cov_emp is not None), "Input only one of X and cov_emp"
@@ -14,18 +15,19 @@ class Notears_MLP_MCEM_INIT:
 
         X = X.astype(np.float32)
         d = X.shape[1]
-        model = MLPModel(dims=[d, 10, 1], bias=True)
+        model = MLPModel(dims=[d, 10, 1], bias=True, prior_adj=self.prior_adj)
         W_est, model_final = notears_nonlinear(model, X, lambda1=0.01, lambda2=0.01)
 
         return W_est, model_final
 
 class MLPModel(nn.Module):
-    def __init__(self, dims, bias=True):
+    def __init__(self, dims, bias=True, prior_adj=None):
         super(MLPModel, self).__init__()
         assert len(dims) >= 2
         assert dims[-1] == 1
         d = dims[0]
         self.dims = dims
+        self.prior_adj = prior_adj
         # fc1: variable splitting for l1
         self.fc1_pos = nn.Linear(d, d * dims[1], bias=bias)
         self.fc1_neg = nn.Linear(d, d * dims[1], bias=bias)
@@ -40,10 +42,15 @@ class MLPModel(nn.Module):
     def _bounds(self):
         d = self.dims[0]
         bounds = []
-        for j in range(d):
-            for m in range(self.dims[1]):
-                for i in range(d):
-                    if i == j:
+        # fc1_weight.view(d, -1, d) -> [j_target, m1_hidden, i_source]
+        # 这里的权重贡献于从 i_source 到 j_target 的边
+        for j_target in range(d): # 目标节点
+            for _ in range(self.dims[1]): # 隐层单元
+                for i_source in range(d): # 源节点
+                    if i_source == j_target: # 无自环
+                        bound = (0, 0)
+                    # 如果 prior_adj[source, target] == 0 表示没有从 source 到 target 的边
+                    elif self.prior_adj is not None and self.prior_adj[i_source, j_target] == 0:
                         bound = (0, 0)
                     else:
                         bound = (0, None)

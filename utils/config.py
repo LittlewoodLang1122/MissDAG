@@ -156,6 +156,13 @@ def add_dag_args(parser):
                         default='Sup-G',
                         help="Type of score function ['Sup-G', 'Sub-G'].")
 
+    parser.add_argument('--prior_adj_path',
+                        type=str,
+                        default=None,
+                        help="Path to a file containing the prior adjacency matrix (0 for no edge, 1 for allowed/unknown). "
+                             "The file should be loadable by np.loadtxt (e.g., space or comma separated values). "
+                             "Matrix A where A[i,j]=0 means no edge from node i to node j.")
+
 
 def add_miss_args(parser):
     """Add missing method arguments for parser.
